@@ -38,7 +38,6 @@ final class ParkingService
             id: null,
             plate: $plate,
             vehicleType: $vehicleType,
-            baseRate: 0.0,
             amount: 0.0,
             checkin: '',
             checkout: ''
@@ -79,7 +78,6 @@ final class ParkingService
             id: $id,
             plate: $plate,
             vehicleType: $vehicleType,
-            baseRate: 0.0,
             amount: $amount,
             checkin: $checkin,
             checkout: $checkout
@@ -126,7 +124,6 @@ final class ParkingService
             id: $id,
             plate: $vehicle->plate(),
             vehicleType: $vehicle->vehicleType(),
-            baseRate: $vehicle->baseRate(),
             amount: $vehicle->amount(),
             checkin: $checkinTime,
             checkout: $vehicle->checkout()
@@ -162,7 +159,6 @@ final class ParkingService
             id: $id,
             plate: $vehicle->plate(),
             vehicleType: $vehicle->vehicleType(),
-            baseRate: $vehicle->baseRate(),
             amount: $amount,
             checkin: $vehicle->checkin(),
             checkout: $checkoutTime

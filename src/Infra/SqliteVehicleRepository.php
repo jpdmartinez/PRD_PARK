@@ -33,13 +33,12 @@ final class SqliteVehicleRepository implements VehicleRepository
     public function create(Vehicle $vehicle): Vehicle
     {
         $stmt = $this->pdo->prepare(
-            'INSERT INTO vehicles (plate, vehicle_type, base_rate, amount, checkin, checkout)
-             VALUES (:plate, :vehicle_type, :base_rate, :amount, :checkin, :checkout)'
+            'INSERT INTO vehicles (plate, vehicle_type, amount, checkin, checkout)
+             VALUES (:plate, :vehicle_type, :amount, :checkin, :checkout)'
         );
         $stmt->execute([
             ':plate' => $vehicle->plate(),
             ':vehicle_type' => $vehicle->vehicleType(),
-            ':base_rate' => $vehicle->baseRate(),
             ':amount' => $vehicle->amount(),
             ':checkin' => $vehicle->checkin(),
             ':checkout' => $vehicle->checkout(),
@@ -55,14 +54,13 @@ final class SqliteVehicleRepository implements VehicleRepository
         }
         $stmt = $this->pdo->prepare(
             'UPDATE vehicles
-             SET plate=:plate, vehicle_type=:vehicle_type, base_rate=:base_rate, amount=:amount, checkin=:checkin, checkout=:checkout
+             SET plate=:plate, vehicle_type=:vehicle_type, amount=:amount, checkin=:checkin, checkout=:checkout
              WHERE id=:id'
         );
         $stmt->execute([
             ':id' => $vehicle->id(),
             ':plate' => $vehicle->plate(),
             ':vehicle_type' => $vehicle->vehicleType(),
-            ':base_rate' => $vehicle->baseRate(),
             ':amount' => $vehicle->amount(),
             ':checkin' => $vehicle->checkin(),
             ':checkout' => $vehicle->checkout()
@@ -82,7 +80,6 @@ final class SqliteVehicleRepository implements VehicleRepository
             id: (int)$r['id'],
             plate: (string)$r['plate'],
             vehicleType: (string)$r['vehicle_type'],
-            baseRate: (float)$r['base_rate'],
             amount: (float)$r['amount'],
             checkin: (string)($r['checkin'] ?? ''),
             checkout: (string)($r['checkout'] ?? '')

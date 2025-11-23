@@ -16,7 +16,6 @@ CREATE TABLE IF NOT EXISTS vehicles (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   plate TEXT NOT NULL,
   vehicle_type TEXT NOT NULL,
-  base_rate REAL NOT NULL CHECK(base_rate >= 0),
   amount REAL NOT NULL CHECK(amount >= 0),
   checkin TEXT NOT NULL,
   checkout TEXT NOT NULL
