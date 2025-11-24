@@ -10,7 +10,7 @@ Sistema de gerenciamento de estacionamento desenvolvido em PHP, seguindo princí
 - [Como Executar](#como-executar)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Arquitetura](#arquitetura)
-- [Decisões de Design](#decisões-de-design)
+- [Conceitos utilizados](#decisões-de-design)
 - [Funcionalidades](#funcionalidades)
 - [Validações](#validações)
 
@@ -140,7 +140,7 @@ O projeto segue uma **Arquitetura em Camadas** com separação clara de responsa
    - Localizada em `public/`
    - Responsável por receber requisições e renderizar respostas
 
-## Conceitos utilizados
+## Conceitos Utilizados
 
 ### 1. **SRP**
 - **Motivo**: Separação clara de responsabilidades, facilitando manutenção e testes
