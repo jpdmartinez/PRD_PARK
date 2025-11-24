@@ -171,13 +171,13 @@ O projeto segue uma **Arquitetura em Camadas** com separação clara de responsa
 - Registro de placa e tipo de veículo
 - Validação de placa (formato Mercosul ou antigo)
 - Tipos suportados: Carro, Moto, Caminhão
-![alt text](prints/image1.PNG)
+![alt text](public/assets/image1.PNG)
 
 ### Check-in
 - Registro de entrada do veículo
 - Timestamp automático da entrada
 - Validação de duplicidade de check-in
-![alt text](prints/image2.PNG)
+![alt text](public\assets\image2.PNG)
 
 ### Check-out
 - Registro de saída do veículo
@@ -192,7 +192,7 @@ O projeto segue uma **Arquitetura em Camadas** com separação clara de responsa
 - Faturamento total
 - Faturamento por tipo de veículo
 - Quantidade de veículos por tipo
-![alt text](prints/image3.PNG)
+![alt text](public\assets\image3.PNG)
 
 ## Validações
 
@@ -202,7 +202,7 @@ A placa deve seguir um dos formatos:
   - Exemplo: `ABC1D23`, `ABC-1D23`
 - **Formato Antigo**: `LLLNNNN` (3 letras, 4 números)
   - Exemplo: `ABC1234`, `ABC-1234`
-![alt text](prints/image4.png)
+![alt text](public\assets\image4.png)
 
 O hífen é opcional e será ignorado na validação.
 
