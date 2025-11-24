@@ -10,7 +10,7 @@ Sistema de gerenciamento de estacionamento desenvolvido em PHP, seguindo princí
 - [Como Executar](#como-executar)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Arquitetura](#arquitetura)
-- [Conceitos utilizados](#decisões-de-design)
+- [Conceitos utilizados](#conceitos-utilizados)
 - [Funcionalidades](#funcionalidades)
 - [Validações](#validações)
 
@@ -177,7 +177,7 @@ O projeto segue uma **Arquitetura em Camadas** com separação clara de responsa
 - Registro de entrada do veículo
 - Timestamp automático da entrada
 - Validação de duplicidade de check-in
-![alt text](public\assets\image2.PNG)
+![alt text](public/assets/image2.PNG)
 
 ### Check-out
 - Registro de saída do veículo
@@ -192,7 +192,7 @@ O projeto segue uma **Arquitetura em Camadas** com separação clara de responsa
 - Faturamento total
 - Faturamento por tipo de veículo
 - Quantidade de veículos por tipo
-![alt text](public\assets\image3.PNG)
+![alt text](public/assets/image3.PNG)
 
 ## Validações
 
@@ -202,7 +202,7 @@ A placa deve seguir um dos formatos:
   - Exemplo: `ABC1D23`, `ABC-1D23`
 - **Formato Antigo**: `LLLNNNN` (3 letras, 4 números)
   - Exemplo: `ABC1234`, `ABC-1234`
-![alt text](public\assets\image4.png)
+![alt text](public/assets/image4.png)
 
 O hífen é opcional e será ignorado na validação.
 
