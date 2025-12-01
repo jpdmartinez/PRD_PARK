@@ -40,7 +40,7 @@ Sistema completo para gerenciamento de estacionamento que permite:
 1. Clone o repositório:
 ```bash
 git clone https://github.com/jpdmartinez/PRD_PARKING
-cd PRD_PARK
+cd PRD_PARKING
 ```
 
 2. Instale as dependências:
@@ -73,12 +73,12 @@ O sistema estará disponível em: `http://localhost:8000`
 ### Usando XAMPP:
 
 1. Copie o projeto para a pasta `htdocs` (XAMPP)
-2. Acesse via navegador: `http://localhost/PRD_PARK/public/`
+2. Acesse via navegador: `http://localhost/PRD_PARKING/public/`
 
 ## Estrutura do Projeto
 
 ```
-PRD_PARK/
+PRD_PARKINK/
 ├── public/                 
 │   ├── index.php          
 │   ├── register.php       
